@@ -1,0 +1,1 @@
+.default-wrap{padding-top:100rpx}.custom-wrap{padding:40rpx 0;display:flex;justify-content:center;align-items:center;flex-direction:column;width:100%}.custom-wrap .image-wrap{width:224rpx;height:224rpx}.custom-wrap .title{padding-bottom:14rpx;font-size:28rpx;font-weight:700;color:#333}.custom-wrap .text{font-size:28rpx;font-weight:400;color:#666}

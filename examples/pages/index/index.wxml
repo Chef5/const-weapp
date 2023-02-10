@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="list">
+    <navigator
+      class="item"
+      wx:for="{{ list }}"
+      wx:key="path"
+      url="{{ item.path }}"
+      open-type="navigate">
+      <view class="label">
+        {{ item.label }}
+        <span wx:if="{{ item.theme }}" class="support-theme">支持主题</span>
+      </view>
+      <view class="value">{{ item.value }} ></view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "message-overlay",
+  "usingComponents": {
+    "message-overlay": "../../lib/message-overlay/index"
+  }
+}

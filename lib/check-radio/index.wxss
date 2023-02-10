@@ -1,0 +1,1 @@
+.con{display:flex;align-items:center}.con .label{padding-left:8rpx;font-size:30rpx;color:#666}

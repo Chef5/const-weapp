@@ -1,0 +1,40 @@
+<button bind:tap="toggleTheme">切换主题</button>
+
+基础用法：
+
+<check-radio
+  oss-url="{{ ossUrl }}"
+  theme="{{ theme }}"
+  size="36rpx"
+  checked="{{isRead}}"
+  label="我已阅读《隐私协议》并同意"
+  bind:change="handleCheck"
+/>
+
+默认选中：
+
+<check-radio
+  oss-url="{{ ossUrl }}"
+  theme="{{ theme }}"
+  size="36rpx"
+  checked="{{ true }}"
+  label="面包"
+/>
+
+50rpx：
+
+<check-radio
+  oss-url="{{ ossUrl }}"
+  theme="{{ theme }}"
+  size="50rpx"
+  label="咖啡"
+/>
+
+100rpx：
+
+<check-radio
+  oss-url="{{ ossUrl }}"
+  theme="{{ theme }}"
+  size="100rpx"
+  label="咖啡"
+/>

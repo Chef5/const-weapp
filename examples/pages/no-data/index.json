@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "no-data",
+  "usingComponents": {
+    "no-data": "../../lib/no-data/index"
+  }
+}

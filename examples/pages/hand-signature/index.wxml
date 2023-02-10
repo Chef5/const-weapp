@@ -1,0 +1,7 @@
+<hand-signature
+  show-clean
+  show-undo
+  theme="{{ theme }}"
+  bind:cancel="handleCancel"
+  bind:confirm="handleConfirm"
+/>

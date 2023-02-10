@@ -1,0 +1,8 @@
+<!-- index -->
+<view class="const-container default-wrap">
+  <van-empty
+    class="custom-image"
+    image="{{ image || imageEmpty }}"
+    description="{{ descriptionText }}"
+  />
+</view>

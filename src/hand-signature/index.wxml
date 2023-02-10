@@ -1,0 +1,31 @@
+<view class="piller-container {{ theme }}">
+  <!-- 伪全屏） -->
+  <view class="container {{ orientation }}">
+    <view class="actions-wrap" style="height:{{height}}px;">
+      <view class="actions" style="width:{{height}}px;">
+        <view class="tips">{{ tips }}</view>
+        <view class="btn-group">
+          <!-- 取消按钮 -->
+          <view class="button" wx:if="{{ showCancel }}" bindtap="handleCancel">{{ cancelText }}</view>
+          <!-- 清除按钮 -->
+          <view class="button" wx:if="{{ showClean }}" bindtap="handleClear">{{ cleanText }}</view>
+          <!-- 清除按钮 -->
+          <view class="button" wx:if="{{ showUndo }}" bindtap="handleUndo">{{ undoText }}</view>
+          <!-- 确认按钮 -->
+          <view class="button button-fill" bindtap="handleConfirm">{{ confirmText }}</view>
+        </view>
+      </view>
+    </view>
+    <canvas
+      type="2d"
+      id="signature"
+      class="signature"
+      style="width:{{width}}px;height:{{height}}px;"
+      disable-scroll="{{true}}"
+      bindtouchstart="handleTouchStart"
+      bindtouchmove="handleTouchMove"
+      bindtouchcancel="handleTouchEnd"
+      bindtouchend="handleTouchEnd"
+    ></canvas>
+  </view>
+</view>

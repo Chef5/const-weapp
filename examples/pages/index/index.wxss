@@ -1,0 +1,32 @@
+.container {
+
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  box-sizing: border-box;
+  padding: 20rpx 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+.label {
+  position: relative;
+  font-size: 32rpx;
+  color: #333;
+}
+.value {
+  font-size: 28rpx;
+  color: #666;
+}
+.support-theme {
+  position: absolute;
+  right: -70rpx;
+  top: -10rpx;
+  font-size: 18rpx;
+  color: #f7852f;
+}

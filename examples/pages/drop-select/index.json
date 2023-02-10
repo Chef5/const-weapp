@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "drop-select",
+  "usingComponents": {
+    "drop-select": "../../lib/drop-select/index"
+  }
+}

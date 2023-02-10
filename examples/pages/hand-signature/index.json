@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "hand-signature",
+  "usingComponents": {
+    "hand-signature": "../../lib/hand-signature/index"
+  }
+}

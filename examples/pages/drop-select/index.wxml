@@ -1,0 +1,19 @@
+无初始值：
+
+<drop-select
+  title="用药频次"
+  placeholder="请选择用药频次"
+  loading="{{ loading }}"
+  list="{{ frequencyList }}"
+  bind:change="handleSelectChange"
+/>
+
+默认选中：
+<drop-select
+  title="用药频次"
+  placeholder="请选择用药频次"
+  loading="{{ loading }}"
+  value="{{ frequencyCode }}"
+  list="{{ frequencyList }}"
+  bind:change="handleSelectChange"
+/>

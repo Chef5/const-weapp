@@ -1,0 +1,19 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/no-data/index",
+        "pages/drop-select/index",
+        "pages/message-overlay/index",
+        "pages/check-radio/index",
+        "pages/hand-signature/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#FAFAFA",
+        "navigationBarTitleText": "Const WeApp",
+        "navigationBarTextStyle": "black",
+        "backgroundTextStyle": "dark",
+        "backgroundColor": "#f9f9f9"
+    },
+    "debug": true,
+    "sitemapLocation": "sitemap.json"
+}

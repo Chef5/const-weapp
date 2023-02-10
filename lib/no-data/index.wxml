@@ -1,0 +1,17 @@
+<!-- index -->
+<view class="const-container {{isCustom ? 'custom-wrap': 'default-wrap' }}">
+  <van-empty
+    wx:if="{{ !isCustom }}"
+    class="custom-image"
+    image="{{ image || imageEmpty }}"
+    description="{{ descriptionText }}"
+  />
+  <image
+    wx:if="{{ isCustom }}"
+    class="image-wrap"
+    style="{{ imageStyle }}"
+    src="{{ image || imageEmpty }}"
+  ></image>
+  <view wx:if="{{ isCustom && title }}" class="title">{{ title }}</view>
+  <view wx:if="{{ isCustom }}" class="text" style="{{ textStyle }}">{{ descriptionText }}</view>
+</view>

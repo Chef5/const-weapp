@@ -1,0 +1,48 @@
+<!-- index -->
+<view class="const-container {{ theme }}">
+  <!-- 伪全屏） -->
+  <view class="container {{ orientation }}">
+    <view class="actions-wrap" style="height:{{height}}px;">
+      <view class="actions" style="width:{{height}}px;">
+        <view class="tips">{{ tips }}</view>
+        <view class="btn-group">
+          <!-- 取消按钮 -->
+          <view class="button" wx:if="{{ showCancel }}" bindtap="handleCancel">{{ cancelText }}</view>
+          <!-- 清除按钮 -->
+          <view class="button" wx:if="{{ showClean }}" bindtap="handleClear">{{ cleanText }}</view>
+          <!-- 撤销按钮 -->
+          <view class="button" wx:if="{{ showUndo }}" bindtap="handleUndo">{{ undoText }}</view>
+          <!--重置按钮-->
+          <view class="button" wx:if="{{showReset}}" bindtap="handleReset">{{resetText}}</view>
+          <!-- 确认按钮 -->
+          <view class="button button-fill" wx:if="{{showConfirm}}" bindtap="handleConfirm">{{ confirmText }}</view>
+        </view>
+      </view>
+    </view>
+    <canvas
+      type="2d"
+      id="signature"
+      class="signature"
+      wx:if="{{signImageUrl===''}}"
+      style="width:{{width}}px;height:{{height}}px;"
+      disable-scroll="{{true}}"
+      bindtouchstart="handleTouchStart"
+      bindtouchmove="handleTouchMove"
+      bindtouchcancel="handleTouchEnd"
+      bindtouchend="handleTouchEnd"
+    ></canvas>
+    <!--签名图片展示-->
+    <view  wx:if="{{signImageUrl!==''}}"
+          class="show-sign-image-wrap"
+          style="width:{{width+2}}px;height:{{height-1}}px;"
+    >
+      <!--需要旋转的图片-->
+      <!--<image src="{{signImageUrl}}"  style="width:{{height}}px;height:{{width}}px;"></image>-->
+      <!--不需要旋转-->
+      <image src="{{signImageUrl}}"  style="width:{{width}}px;height:{{height}}px;"></image>
+    </view>
+    <!-- <view class="placeholder">{{ placeholder }}</view> -->
+  </view>
+  <!--toast提示显示-->
+  <view class="self-tip-wrap" wx:if="{{showVanLay}}">{{showVanLayTitle}}</view>
+</view>

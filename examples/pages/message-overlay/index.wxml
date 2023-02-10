@@ -1,0 +1,32 @@
+<button bind:tap="toggleTheme">切换主题</button>
+
+基础用法：<button bind:tap="showMessageOverlay" data-id="overlay1">显示</button>
+
+<message-overlay
+  theme="{{ theme }}"
+  id="overlay1"
+  showClose
+  showCancel
+  title="确认收货"
+  desc="是否确认收到当前订单药品？"
+  cancel-btn="没有"
+  confirm-btn="是的，已收到"
+/>
+
+使用插槽：<button bind:tap="showMessageOverlay" data-id="overlay2">显示</button>
+<message-overlay
+  theme="{{ theme }}"
+  id="overlay2"
+  showClose
+  showCancel
+  title="插槽演示"
+  cancel-btn="取消"
+  confirm-btn="确定"
+  data="{{ optionData }}"
+  bind:cancel="handleCancel"
+  bind:confirm="handleConfirm"
+>
+  <view>
+    <span style="color: red;">使用了插槽渲染</span>
+  </view>
+</message-overlay>

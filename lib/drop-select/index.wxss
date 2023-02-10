@@ -1,0 +1,1 @@
+.container{display:flex}.container .label{padding-right:18rpx;font-size:30rpx;color:#999}.container .value{font-size:30rpx;color:#333}.active-class{font-size:32rpx;color:#22a1d8;background-color:rgba(34,161,216,.1216)}

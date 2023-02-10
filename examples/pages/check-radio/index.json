@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "check-radio",
+  "usingComponents": {
+    "check-radio": "../../lib/check-radio/index"
+  }
+}

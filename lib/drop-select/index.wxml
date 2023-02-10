@@ -1,0 +1,26 @@
+<view class="const-container container" bindtap="handleMenu">
+  <view class="label {{ selectValue ? 'value' : '' }}">{{ selectValue !== null ? selectValue.label : placeholder }}</view>
+  <van-icon name="arrow" color="#999" />
+</view>
+
+<van-popup
+  show="{{ menuShow }}"
+  position="bottom"
+  custom-style="height: 40%; overflow: hidden;"
+  round
+  bind:close="onClose"
+>
+  <van-picker
+    loading="{{ loading }}"
+    columns="{{ columns }}"
+    value-key="label"
+    default-index="{{ defaultIndex }}"
+    show-toolbar
+    title="{{title}}"
+    confirm-button-text="确认"
+    cancel-button-text=""
+    active-class="active-class"
+    bind:change="onChange"
+    bind:confirm="onClose"
+  />
+</van-popup>

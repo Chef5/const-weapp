@@ -1,0 +1,4 @@
+<view class="const-container con {{ theme }}" catchtap="handleCheckToggle">
+  <van-icon name="{{ checked ? OSS_PREFIX + iconChecked : OSS_PREFIX + iconUnCheck }}" size="{{ size }}" />
+  <view class="label" wx:if="{{ label }}">{{ label }}</view>
+</view>

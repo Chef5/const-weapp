@@ -1,0 +1,22 @@
+<van-overlay show="{{ show }}" bind:click="onClickHide" z-index="99999">
+  <view class="const-container wrapper {{ theme }}">
+    <view class="block">
+      <van-icon wx:if="{{ showClose }}" class="close-icon" name="cross" />
+
+      <!-- 标题 -->
+      <view wx:if="{{ title }}" class="title">{{ title }}</view>
+
+      <!-- 主体内容 -->
+      <view class="desc" wx:if="{{ desc }}">{{ desc }}</view>
+      <view class="desc" wx:else>
+        <slot></slot>
+      </view>
+
+      <!-- 底部按钮 -->
+      <view class="btn">
+        <view class="cancel" catchtap="onClickHide" wx:if="{{ showCancel }}">{{ cancelBtn }}</view>
+        <view class="confirm" catchtap="confirm">{{ confirmBtn }}</view>
+      </view>
+    </view>
+  </view>
+</van-overlay>
