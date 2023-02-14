@@ -1,6 +1,7 @@
 module.exports = {
   title: 'Const Weapp',
   description: 'Const WeApp 快速搭建属于自己的微信小程序组件库',
+  base: '/const-weapp/', // 这里是部署到 https://chef5.github.io/const-weapp 下，因此改变了base。若单独部署，请删除本行。
   themeConfig: {
     nav: [{
         text: 'Home',

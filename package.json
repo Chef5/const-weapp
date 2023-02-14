@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "gulp --gulpfile build/build-dev.js",
     "build": "gulp --gulpfile build/build-prod.js",
+    "docs": "npm run docs:dev",
     "docs:dev": "vuepress dev src",
     "docs:build": "vuepress build src",
     "prepare": "npm run build"
