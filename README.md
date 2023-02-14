@@ -32,15 +32,17 @@ npm run dev
 npm run docs:dev
 ```
 
-浏览器打开：http://localhost:8080/
+浏览器打开：http://localhost:8080/const-weapp/
 
-线上部署：
+线上部署：注意需要根据具体情况修改`src/.vuepress/config.js`下的`base`
 
 ``` sh
 npm run docs:build
 ```
 
 将`src/.vuepress/dist`目录拷贝到服务器部署即可。
+
+> 更多文档配置，请参考：[VuePress 配置](https://vuepress.vuejs.org/zh/config/)
 
 ## 三、如何使用组件库？
 
