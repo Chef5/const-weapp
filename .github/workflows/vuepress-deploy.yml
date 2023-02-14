@@ -13,6 +13,6 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: Chef5/const-weapp
-        TARGET_BRANCH: main
+        TARGET_BRANCH: gh-pages # 部署到分支，默认gh-pages
         BUILD_SCRIPT: git config --global --add safe.directory "*" && npm i && npm run docs:build
         BUILD_DIR: src/.vuepress/dist
