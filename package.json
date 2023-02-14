@@ -12,7 +12,7 @@
     "docs": "npm run docs:dev",
     "docs:dev": "vuepress dev src",
     "docs:build": "vuepress build src",
-    "prepare": "npm run build"
+    "prepare": "npm run build && cd examples && npm i"
   },
   "author": "Chef Wu",
   "license": "MIT",

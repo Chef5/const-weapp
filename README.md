@@ -128,6 +128,7 @@ baseComponent({});
 
 组件库统一封装的props：
 
+| 参数 | 类型 | 默认值 | 说明 | 备注 |
 | ---- | ----- | ----- | ----- | ----- |
 | oss-url | String | xxxxx | oss域名地址 | 无 |
 | theme | String | blue | 主题 | onThemeChange(newValue) |
