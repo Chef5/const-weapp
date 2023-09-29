@@ -8,6 +8,7 @@
 - 在线文档自动生成（根据每个组件的readme.md文件生成）
 - 组件统一封装（支持主题色、统一props）
 - less开发
+- 配套脚手架工具：[dotool-cli](https://github.com/Chef5/dotool-cli)
 
 ## 一、组件开发
 
