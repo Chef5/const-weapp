@@ -1,6 +1,6 @@
 # Const WeApp
 
-**一款微信小程序UI组件库框架，可以根据本框架快速搭建属于自己的微信小程序组件库**
+**一款原生微信小程序UI组件库框架，可以根据本框架快速搭建属于自己的微信小程序组件库**
 
 特色：
 
@@ -16,6 +16,9 @@
 # 拉取项目
 git clone https://github.com/Chef5/const-weapp.git
 npm install
+
+# 新建组件（需要安装dotool-cli）
+dotool create
 
 # 编译组件
 npm run dev
@@ -179,7 +182,7 @@ baseComponent({
 ## 五、缺陷及优化思考
 
 - 版本管理：每次优化其中一个组件，都要导致整个组件库版本升级
-- 组件创建自动化：缺少一个命令工具，可以帮助我们一键在`src`、`examples/pages`下面创建组件源码和预览页面，并能在`examples/app.json`、`examples/pages/index.js`新增预览跳转的代码片段。
+- 组件创建自动化：缺少一个命令工具，可以帮助我们一键在`src`、`examples/pages`下面创建组件源码和预览页面，并能在`examples/app.json`、`examples/pages/index.js`新增预览跳转的代码片段。（已实现 [dotool-cli](https://github.com/Chef5/dotool-cli)）
 - 文档生成：基于组件源码props和事件，自动生成简易的组件说明文档`readme.md`
 
 ## License
